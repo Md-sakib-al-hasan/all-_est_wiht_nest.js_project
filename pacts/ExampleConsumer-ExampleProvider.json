@@ -1,0 +1,41 @@
+{
+  "consumer": {
+    "name": "ExampleConsumer"
+  },
+  "interactions": [
+    {
+      "description": "A request for the home page",
+      "providerStates": [
+        {
+          "name": "Has a home route"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/"
+      },
+      "response": {
+        "body": "Hello World!",
+        "headers": {
+          "Content-Type": "text/html; charset=utf-8"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "16.0.4"
+    },
+    "pactRust": {
+      "ffi": "0.4.28",
+      "models": "1.3.5"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "ExampleProvider"
+  }
+}
